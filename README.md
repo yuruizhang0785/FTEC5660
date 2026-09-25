@@ -48,6 +48,12 @@ DeepSeek Flash model. JPEG, PNG, GIF, and WebP inputs are accepted by the
 homework runner.
 
 
-## Homework 1 solution: 
-> to students: please fill your solution description here.
-
+## Homework 1
+please use *markdown preview* to preview workflow or check worklow.png in the github root directory
+```mermaid
+flowchart TD
+    A["1. Instantiate multimodal model: deepseek-v4-flash-vision-exp"]
+    A --> B["2. Define prompt template<br/>- Load environment variables from .env<br/>- Define agent role<br/>- Define query1 calculation logic<br/>- Define query2 calculation logic"]
+    B --> C["3. Set OCR LLM to perform calculation"]
+    C --> D["4. Set verify LLM to check mismatched calculation results"]
+    D --> E["5. Output final results"]
