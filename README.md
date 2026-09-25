@@ -57,3 +57,14 @@ flowchart TD
     B --> C["3. Set OCR LLM to perform calculation"]
     C --> D["4. Set verify LLM to check mismatched calculation results"]
     D --> E["5. Output final results"]
+
+*description*
+1. Instantiate the multimodal model `deepseek-v4-flash-vision-exp`
+2. Define the prompt template
+   - Load environment variables from `.env` file
+   - Define AI role setting
+   - Define calculation logic for query 1
+   - Define calculation logic for query 2
+3. Configure the OCR LLM to perform calculation tasks
+4. Configure the verification LLM to check for calculation mismatches
+5. Output the final results
